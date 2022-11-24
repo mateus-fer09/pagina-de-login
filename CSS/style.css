@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #0B3666;
+    --cor1: #60A0EA;
+    --cor2: #1A79E6;
+    --cor3: #2A4666;
+    --cor4: #145EB3;
+    --branco: #fff;
+    --preto: #000;
+
+    --font1: 'Maven Pro', sans-serif;
+    --font2: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+main {
+    width: 50%;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 25px;
+}
+
+.formulario {
+    padding: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario h1 {
+    color: var(--branco );
+}
+
+.formulario form {
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.404);
+}
+
+.formulario form label {
+    color: var(--preto);
+    padding: 10px 0px;
+}
+
+.formulario form #input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px var(--cor0);
+    padding: 5px;
+}
+
+.formulario form #lembre {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario form #lembre input {
+    margin-left: 10px;
+}
+
+.formulario form #botao-entrar {
+    border: none;
+    padding: 10px;
+    background-color: var(--cor0);
+    color: var(--branco);
+    border-radius: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.formulario form #botao-entrar:hover {
+    background-color: var(--branco);
+    color: var(--cor0);
+    border: solid 1px var(--cor0)
+}
+
+.formulario form h5 {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.formulario form a:hover {
+    color: #145EB3;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+}

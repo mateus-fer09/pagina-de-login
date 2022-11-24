@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> <!-- font externa -->
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="formulario">
+
+                <h1>Faça seu login</h1>
+                <form action="login.php" method="post" autocomplete="off" onclick="entrar()">
+                    <label for="iemail">Email:</label>
+                    <input id="input" type="email" name="email" id="iemail" required>
+
+                    <label for="isenha">Digite sua senha:</label>
+                    <input id="input" type="password" name="senha" id="isenha" required>
+
+                    <div id="lembre">
+                        <label for="ilembre">Lembre-se de mim</label>
+                        <input type="checkbox" name="lembre" id="ilembre">
+                    </div>
+
+                    <input id="botao-entrar" type="submit" value="Entrar">
+                    <h5><a href="#">Esquecir minha senha</a></h5>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
